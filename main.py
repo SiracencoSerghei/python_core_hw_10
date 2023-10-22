@@ -1,4 +1,7 @@
 """hw_10"""
+from field import Field
+from className import Name
+from classPhone import Phone
 from classRecord import Record
 from classAddressBook import AddressBook
 from decorators.input_errors import input_errors
