@@ -1,12 +1,17 @@
+RED = "\033[91m"
+GREEN = "\033[92m"
+BLUE = "\033[94m"
+RESET = "\033[0m"
+
 def input_errors(func):
     """Decorator to handle input errors"""
     def wrapper(*args, **kwargs):
         try:
             return func(*args, **kwargs)
-        except KeyError:
-            return "Enter user name."
-        except ValueError:
-            return "Give me name and phone, please."
-        except IndexError:
-            return "You must enter a valid command."
+        except KeyError as e:
+            return f"{RED}{e}.{RESET}"
+        except ValueError as e:
+            return f"{RED}{e}.{RESET}"
+        except IndexError as e:
+            return f"{RED}{e}.{RESET}"
     return wrapper

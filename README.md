@@ -122,3 +122,18 @@ class AddressBook(UserDict):
 
     # Видалення запису Jane
     book.delete("Jane")
+
+
+    ## work in console:
+
+    hello
+
+    add <name> <phone>
+
+    change <name> <old_phone> <new_phone>
+
+    show
+
+    for exit:
+
+    "goodbye", "close", "exit" or "."
