@@ -3,7 +3,7 @@ from className import Name
 from classPhone import Phone
 class Record:
     """class Record"""
-    def __init__(self, name):
+    def __init__(self, name: Name):
         self.name = Name(name)
         self.phones = []
     def add_phone(self,phone):
